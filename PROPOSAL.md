@@ -1,6 +1,6 @@
 # [Project Name]
 
-Created by [team member], [team member], and [team member].
+Created by Maya Ramishun & Mohammad Kanoongo
 
 ## 🚀 Mission statement
 
@@ -8,15 +8,15 @@ Our application, [app name] is for [target audience]. It allows users to [what i
 
 ## API
 
-This application will use the [name of API] API. Below are the documentation and specific endpoints we intend to use.
+This application will use the TheMealDB API. Below are the documentation and specific endpoints we intend to use.
 
-- Link to API documentation: [Link goes here]
-- [API endpoint #1]
-  - [List of data values used by the endpoint]
-- [API endpoint #2]
-  - [List of data values used by the endpoint]
-- [API endpoint #3]
-  - [List of data values used by the endpoint]
+- Link to API documentation: (https://www.themealdb.com/api.php)
+- www.themealdb.com/api/json/v1/1/search.php?s=
+  - Name of the meal
+- www.themealdb.com/api/json/v1/1/random.php
+  - None, generates a random meal.
+- www.themealdb.com/api/json/v1/1/filter.php?i=
+  Takes a main ingredient and fetches results.
 
 [If your API requires an API key, say so here.]
 
@@ -24,43 +24,48 @@ This application will use the [name of API] API. Below are the documentation and
 
 The core features of the application include:
 
-* Users can...
-* Users can...
-* Users can...
+- Users can...
+- Users can...
+- Users can...
 
 ## 🤔 Stretch User Stories
 
 If time permits, the following stretch features will be implemented in order of priority:
 
-* Users will be able to...
-* Users will be able to...
-* Users will be able to...
+- Users will be able to...
+- Users will be able to...
+- Users will be able to...
 
 ## 📆 Timeline for reaching MVP in 1 week
 
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
 **Day 1**
+
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 
 **Day 2**
+
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 
 **Day 3**
+
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 
 **Day 4**
+
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 
 **Day 5**
+
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
 - [ ] Ticket description and due date
