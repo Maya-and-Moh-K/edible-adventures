@@ -24,15 +24,15 @@ This application will use the [name of API] API. Below are the documentation and
 
 The core features of the application include:
 
-* Users can...
-* Users can...
-* Users can...
+* Users can search meals by name.
+* Users can generate a random meal.
+* Users can search for meals by main ingredient.
 
 ## 🤔 Stretch User Stories
 
 If time permits, the following stretch features will be implemented in order of priority:
 
-* Users will be able to...
+* Users will be able to view a video for each recipe.
 * Users will be able to...
 * Users will be able to...
 
