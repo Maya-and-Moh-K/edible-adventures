@@ -1,10 +1,10 @@
-# [Project Name]
+# Edible Adventures
 
 Created by Maya Ramishun and Mohammed Kanoongo.
 
 ## 🚀 Mission statement
 
-Our application, [app name] is for [target audience]. It allows users to [what it does and why audience would use it]
+Our application, **Edible Adventures** is for **users who love making and eating new foods**. It allows users to **discover new recipes in any meal category**.
 
 ## API
 
@@ -42,14 +42,14 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 **Day 1**
 
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Create components (2 days)
+- [ ] Create Context (1 day)
+- [ ] User will be able to search meals by name (2 days)
 
 **Day 2**
 
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] User will be able to search for meals by main ingredient (1 day)
+- [ ] User will be able to generate a random meal (2 days)
 - [ ] Ticket description and due date
 
 **Day 3**
@@ -74,6 +74,6 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 Below, you can find wireframes for our project. Each wireframe shows a different page of our application as well as the key components of the application. Details such as specific text values or images are intentionally not included:
 
-[Wireframe for page 1]
+![Wireframe 1](wireframe-1.jpg)
 
-[Wireframe for page 2]
+![Wireframe 2](wireframe-2.jpg)
