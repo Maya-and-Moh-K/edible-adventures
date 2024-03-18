@@ -42,33 +42,27 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 **Day 1**
 
-- [ ] Create components (2 days)
 - [ ] Create Context (1 day)
-- [ ] User will be able to search meals by name (2 days)
+- [ ] Finish README
 
 **Day 2**
 
-- [ ] User will be able to search for meals by main ingredient (1 day)
-- [ ] User will be able to generate a random meal (2 days)
-- [ ] Ticket description and due date
+- [ ] Create components (2 days)
+- [ ] User will be able to search meals by name (2 days)
 
 **Day 3**
 
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] User will be able to generate a random meal (2 days)
+- [ ] User will be able to search for meals by main ingredient (1 day)
 
 **Day 4**
 
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Experiment with non-submit events
+- [ ] Use Link to help user navigate between pages
 
 **Day 5**
 
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Styling and other misc items
 
 ## Wireframes of each page in your application
 
