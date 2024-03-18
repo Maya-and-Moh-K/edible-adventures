@@ -47,40 +47,23 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 **Day 1**
 
-<!-- Things that should be in day one -->
-<!-- how the data will flow -->
-<!-- components files -->
-<!-- pages files -->
-<!-- navigation to pages -->
-
 - [ ] Create Context (1 day)
 - [ ] Create components
 - [ ] Finish README
 - [ ] Use Link to navigate between pages
+- [ ] Experiment with non-submit events (brainstorming and implementing)
 
 **Day 2**
 
-<!-- creating components should be a part of day 1 as well -->
-
-<!-- Break this down what parts do you need to make this happen -->
-
 - [ ] User will be able to search meals by name: we will have our components. We will add state for search query and filtered meals. Along with that, we will handle search input and submission. We will integrate the Search component. After that we will work on how to render the search results which will also include some basic styling at first, but more work on that later.
-
-<!-- You should have a working MVP by this day -->
-<!-- have some styling done here as well -->
 
 **Day 3**
 
-<!-- Break this down what parts do you need to make this happen -->
-
-- [ ] User will be able to generate a random meal (2 days)
-<!-- Break this down what parts do you need to make this happen -->
-- [ ] User will be able to search for meals by main ingredient (1 day)
+- [ ] User will be able to generate a random meal : components are already set. The essentials of this are the same as searching meal by name, but there is no "search input" component. Rather, we will just try and utilize a form or button to render a random meal.
 
 **Day 4**
 
-- [ ] Experiment with non-submit events
-<!-- This should be a part of day 1 -->
+- [ ] User will be able to search for meals by category: the essentials will be the same as searching meal by name.
 
 **Day 5**
 
