@@ -63,6 +63,7 @@ To ensure that we can complete all core features of the application in 1 week, w
 **Day 5**
 
 - [ ] Styling and other misc items
+- [ ] Implement stretch goal
 
 ## Wireframes of each page in your application
 
