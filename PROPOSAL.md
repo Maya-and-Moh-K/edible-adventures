@@ -9,9 +9,12 @@ Our application, **Edible Adventures** is for **users who love making and eating
 ## API
 
 This application will use the TheMealDB API. Below are the documentation and specific endpoints we intend to use.
+
 <!-- Remember that you need one endpoint that gives you many things and from there get one thing -->
 <!-- Which one of these is that? -->
+
 - Link to API documentation: (https://www.themealdb.com/api.php)
+  Main Endpoint: www.themealdb.com/api/json/v1/1/list.php?c=list
 - www.themealdb.com/api/json/v1/1/search.php?s=
   - Name of the meal
 - www.themealdb.com/api/json/v1/1/random.php
@@ -19,17 +22,16 @@ This application will use the TheMealDB API. Below are the documentation and spe
 - www.themealdb.com/api/json/v1/1/filter.php?i=
   Takes a main ingredient and fetches results.
 
-<!-- you do not need this -->
-[If your API requires an API key, say so here.]
-<!--  -->
 ## 👩‍💻 MVP User Stories
 
 The core features of the application include:
+
 <!-- maybe also by category? -->
+
 - Users can search meals by name.
 - Users can generate a random meal.
-- Users can search for meals by main ingredient.
-
+- Users can search for meals by category.
+<!-- will replace meal by main ingredient with category -->
 
 ## 🤔 Stretch User Stories
 
@@ -44,25 +46,33 @@ If time permits, the following stretch features will be implemented in order of 
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
 **Day 1**
+
 <!-- Things that should be in day one -->
 <!-- how the data will flow -->
 <!-- components files -->
 <!-- pages files -->
 <!-- navigation to pages -->
+
 - [ ] Create Context (1 day)
+- [ ] Create components
 - [ ] Finish README
+- [ ] Use Link to navigate between pages
 
 **Day 2**
 
 <!-- creating components should be a part of day 1 as well -->
-- [ ] Create components (2 days)
+
 <!-- Break this down what parts do you need to make this happen -->
-- [ ] User will be able to search meals by name (2 days)
+
+- [ ] User will be able to search meals by name: we will have our components. We will add state for search query and filtered meals. Along with that, we will handle search input and submission. We will integrate the Search component. After that we will work on how to render the search results which will also include some basic styling at first, but more work on that later.
 
 <!-- You should have a working MVP by this day -->
 <!-- have some styling done here as well -->
+
 **Day 3**
+
 <!-- Break this down what parts do you need to make this happen -->
+
 - [ ] User will be able to generate a random meal (2 days)
 <!-- Break this down what parts do you need to make this happen -->
 - [ ] User will be able to search for meals by main ingredient (1 day)
@@ -71,7 +81,6 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 - [ ] Experiment with non-submit events
 <!-- This should be a part of day 1 -->
-- [ ] Use Link to help user navigate between pages
 
 **Day 5**
 
