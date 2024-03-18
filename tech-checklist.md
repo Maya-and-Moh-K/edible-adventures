@@ -1,8 +1,8 @@
 ## Tech Checklist
 
 ### Project Fundamentals
-- [ ] Used Vite for this project
-- [ ] Used React
+- [X] Used Vite for this project
+- [X] Used React
 - [ ] Used React Router for client side routing
 - [ ] Used Context at least once
 - [ ] Made a fetch to get multiple resources
