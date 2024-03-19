@@ -3,8 +3,8 @@
 ### Project Fundamentals
 - [X] Used Vite for this project
 - [X] Used React
-- [ ] Used React Router for client side routing
-- [ ] Used Context at least once
+- [X] Used React Router for client side routing
+- [X] Used Context at least once
 - [ ] Made a fetch to get multiple resources
 - [ ] Made a fetch to get a single, specific resource
 - [ ] Made a third fetch for whatever you want
