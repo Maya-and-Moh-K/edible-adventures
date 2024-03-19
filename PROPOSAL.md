@@ -19,8 +19,8 @@ This application will use the TheMealDB API. Below are the documentation and spe
   - Name of the meal
 - www.themealdb.com/api/json/v1/1/random.php
   - None, generates a random meal.
-- www.themealdb.com/api/json/v1/1/filter.php?i=
-  Takes a main ingredient and fetches results.
+- www.themealdb.com/api/json/v1/1/categories.php
+  Lists categories.
 
 ## 👩‍💻 MVP User Stories
 
