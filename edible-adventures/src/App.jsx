@@ -8,32 +8,20 @@ import SearchByCategory from './components/SearchByCategory';
 import RandomMeal from './components/RandomMeal';
 import MealList from './components/MealList';
 import MealDetail from './components/MealDetail';
-import { MealContextProvider } from "./context/MealContext";
+// import { MealContextProvider } from "./context/MealContext";
 
 function App() {
   return (
-    <Routes>
-      <Router>
-        <div className="App">
-          <Header />
-          <Route exact path="/">
-            <RandomMeal />
-          </Route>
-          <Route path="/search-by-name">
-            <SearchByName />
-          </Route>
-          <Route path="/search-by-category">
-            <SearchByCategory />
-          </Route>
-          <Route path="/meal/:id">
-            <MealDetail />
-          </Route>
-          <Route path="/meals">
-            <MealList />
-          </Route>
-        </div>
-      </Router>
-    </Routes>
+    <div className="App">
+       <Header />
+        <Routes>
+          <Route path="/" element={<RandomMeal />}></Route>
+          <Route path="/search-by-name" element={<SearchByName />}></Route>
+          <Route path="/search-by-category" element={<SearchByCategory />}></Route>
+          <Route path="/meal/:id" element={<MealDetail />}></Route>
+          <Route path="/meals" element={  <MealList />}></Route>
+        </Routes>
+    </div>
   );
 }
 
