@@ -7,10 +7,10 @@
 }
 
 header {
-  background-color: #333;
+  display: flex;
   color: white;
   padding: 10px 0;
-  text-align: center;
+  justify-content: center;
 }
 
 nav ul {
@@ -67,4 +67,11 @@ img {
   display: block;
   margin-bottom: 10px;
   max-width: 100%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 800px;
 }

@@ -1,14 +1,12 @@
-import { useState } from 'react';
 import './App.css';
 import React from 'react';
-import { Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import SearchByName from './components/SearchByName';
 import SearchByCategory from './components/SearchByCategory';
 import RandomMeal from './components/RandomMeal';
 import MealList from './components/MealList';
 import MealDetail from './components/MealDetail';
-// import { MealContextProvider } from "./context/MealContext";
 
 function App() {
   return (

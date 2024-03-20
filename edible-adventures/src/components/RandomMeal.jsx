@@ -5,7 +5,7 @@ const RandomMeal = () => {
   const [meal, setMeal] = useState(null);
 
   useEffect(() => {
-    fetchRandomMeal().then((data) => setMeal(data.meals));
+    fetchRandomMeal();
   }, []);
   return (
     <div>
