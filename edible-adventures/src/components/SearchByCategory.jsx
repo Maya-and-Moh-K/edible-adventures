@@ -4,11 +4,17 @@ import { fetchMealsByCategory } from "../api/meals";
 
 export const SearchByCategory = () => {
   const [category, setCategory] = useState("");
+  const [error, setError] = useState("");
   const history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    history.push(`/meals?category=${category}`);
+    try {
+      await fetchMealsByCategory(category);
+      history.push(`/meals?category=${category}`);
+    } catch (error) {
+      setError("No results found");
+    }
   };
 
   return (
@@ -22,6 +28,7 @@ export const SearchByCategory = () => {
           placeholder="Enter category"
         />
         <button type="submit">Search</button>
+        {error && <p>{error}</p>}
       </form>
     </div>
   );

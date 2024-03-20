@@ -7,7 +7,6 @@ export const RandomMeal = () => {
   useEffect(() => {
     fetchRandomMeal().then((data) => setMeal(data.meals[0]));
   }, []);
-
   return (
     <div>
       <h2>Random Meal</h2>

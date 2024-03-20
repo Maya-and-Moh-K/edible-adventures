@@ -4,11 +4,17 @@ import { fetchMealByName } from "../api/meals";
 
 export const SearchByName = () => {
   const [query, setQuery] = useState("");
+  const [error, setError] = useState("");
   const history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    history.push(`/meals?search=${query}`);
+    try {
+      await fetchMealByName(query);
+      history.push(`/meals?search=${query}`);
+    } catch (error) {
+      setError("No results found");
+    }
   };
 
   return (
@@ -22,6 +28,7 @@ export const SearchByName = () => {
           placeholder="Enter meal name"
         />
         <button type="submit">Search</button>
+        {error && <p>{error}</p>}
       </form>
     </div>
   );

@@ -1,13 +1,7 @@
 import React, { useContext } from "react";
-import { useLocation } from "react-router-dom";
 import { MealContext } from "../context/MealContext";
-
 export const MealList = () => {
   const { meals } = useContext(MealContext);
-  const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const searchQuery = params.get("search");
-  const category = params.get("category");
 
   return (
     <div>
