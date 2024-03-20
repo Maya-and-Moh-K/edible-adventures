@@ -1,19 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 export const Header = () => {
   return (
     <header>
       <nav>
         <ul>
           <li>
-            <Link to="/">Random Meal</Link>
+            <NavLink to="./">Random Meal</NavLink>
           </li>
           <li>
-            <Link to="/search-by-name">Search by Name</Link>
+            <NavLink to="./search-by-name">Search by Name</NavLink>
           </li>
           <li>
-            <Link to="/search-by-category">Search by Category</Link>
+            <NavLink to="./search-by-category">Search by Category</NavLink>
           </li>
         </ul>
       </nav>
