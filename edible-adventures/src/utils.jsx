@@ -1,6 +1,6 @@
 export const handleFetch = async (url, options) => {
   try {
-    const res = await fetch(url, options)
+    const res = await fetch(url, options);
     if (res.ok) {
       const data = await res.json();
       return data;
@@ -10,4 +10,4 @@ export const handleFetch = async (url, options) => {
     console.error(err);
     return null;
   }
-}
+};
