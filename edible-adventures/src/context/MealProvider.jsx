@@ -5,10 +5,11 @@ import { handleFetch } from '../utils.jsx';
 const MealProvider = ({ children }) => {
 
   const [meal, setMeal] = useState([]);
-  
+
   useEffect(() => {
     async function doFetch() {
       const data = await handleFetch('http://www.themealdb.com/api/json/v1/1/list.php?c=list')
+      console.log(data)
       setMeal(data.meal);
     }
     doFetch();

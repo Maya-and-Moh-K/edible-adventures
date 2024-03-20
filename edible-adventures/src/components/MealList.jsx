@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { MealContext } from "../context/MealContext";
-export const MealList = () => {
+import React, { useContext } from 'react';
+import MealContext from '../context/MealContext';
+const MealList = () => {
   const { meals } = useContext(MealContext);
 
   return (
@@ -17,3 +17,5 @@ export const MealList = () => {
     </div>
   );
 };
+
+export default MealList;

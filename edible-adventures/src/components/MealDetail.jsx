@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchMealById } from "../api/meals";
 
-export const MealDetail = () => {
+const MealDetail = () => {
   const { id } = useParams();
   const [meal, setMeal] = useState(null);
 
@@ -24,3 +24,5 @@ export const MealDetail = () => {
     </div>
   );
 };
+
+export default MealDetail

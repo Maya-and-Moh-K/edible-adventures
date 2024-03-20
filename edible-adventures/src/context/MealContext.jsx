@@ -1,14 +1,5 @@
-// context/MealContext.js
-import React, { createContext, useState } from "react";
+import { createContext } from "react";
 
-export const MealContext = createContext();
+const MealContext = createContext();
 
-export const MealContextProvider = ({ children }) => {
-  const [meals, setMeals] = useState([]);
-
-  return (
-    <MealContext.Provider value={{ meals, setMeals }}>
-      {children}
-    </MealContext.Provider>
-  );
-};
+export default MealContext;

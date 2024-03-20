@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { fetchRandomMeal } from "../api/meals";
 
-export const RandomMeal = () => {
+const RandomMeal = () => {
   const [meal, setMeal] = useState(null);
 
   useEffect(() => {
@@ -20,3 +20,5 @@ export const RandomMeal = () => {
     </div>
   );
 };
+
+export default RandomMeal

@@ -1,4 +1,4 @@
-export const handleFetch = async (url, options) => {
+const handleFetch = async (url, options) => {
   try {
     const res = await fetch(url, options);
     if (res.ok) {
@@ -11,3 +11,5 @@ export const handleFetch = async (url, options) => {
     return null;
   }
 };
+
+export default handleFetch

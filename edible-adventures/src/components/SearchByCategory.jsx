@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { fetchMealsByCategory } from "../api/meals";
 
-export const SearchByCategory = () => {
+const SearchByCategory = () => {
   const [category, setCategory] = useState("");
   const [error, setError] = useState("");
-  const history = useHistory();
+  const history = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,3 +33,5 @@ export const SearchByCategory = () => {
     </div>
   );
 };
+
+export default SearchByCategory
