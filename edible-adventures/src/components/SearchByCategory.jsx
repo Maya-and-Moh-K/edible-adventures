@@ -5,7 +5,7 @@ import { fetchMealById } from '../api/meals';
 // import CategorySelector from "./CategorySelector";
 
 const SearchByCategory = () => {
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('Beef');
   const [meals, setMeals] = useState([]);
   const [error, setError] = useState('');
   const [ids, setIds] = useState([]);
@@ -59,6 +59,20 @@ const SearchByCategory = () => {
     }
   };
 
+  const getIngredientsList = (meal) => {
+    let ingredientsList = [];
+    for (let i = 1; i <= 20; i++) {
+      if (meal[`strIngredient${i}`]) {
+        ingredientsList.push(
+          <li key={`ingredient-${i}`}>
+            {meal[`strIngredient${i}`]} - {meal[`strMeasure${i}`]}
+          </li>
+        );
+      }
+    }
+    return ingredientsList;
+  };
+
   return (
     <div>
       <h2>Search by Category</h2>
@@ -72,7 +86,7 @@ const SearchByCategory = () => {
           <option value="Lamb">Lamb</option>
           <option value="Miscellaneous">Miscellaneous</option>
           <option value="Pork">Pork</option>
-          {/* <option value="Seafood">Seafood</option> */}
+          <option value="Seafood">Seafood</option>
           <option value="Pork">Side</option>
           <option value="Starter">Starter</option>
           <option value="Vegan">Vegan</option>
@@ -83,6 +97,20 @@ const SearchByCategory = () => {
         <button type="submit">Search</button>
         {error && <p>{error}</p>}
       </form>
+      {idMeals.length > 0 && (
+        <ul>
+          {idMeals.map((meal) => (
+            <li key={meal.idMeal}>
+              {meal.strMeal}
+              <img src={meal.strMealThumb} alt={meal.strMeal} />
+              <ul>{getIngredientsList(meal)}</ul>
+              {meal.strInstructions}
+            </li>
+          ))}
+        </ul>
+      )}
+      
+
     </div>
   );
 };
