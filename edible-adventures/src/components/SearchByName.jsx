@@ -28,10 +28,10 @@ const SearchByName = () => {
           placeholder="Enter meal name"
         />
         <button type="submit">Search</button>
-        {error && <p>{error}</p>}
       </form>
+      {error && <p>{error}</p>}
     </div>
   );
 };
 
-export default SearchByName
+export default SearchByName;
