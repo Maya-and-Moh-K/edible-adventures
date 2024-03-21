@@ -1,4 +1,3 @@
-// components/MealDetail.js
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchMealById } from "../api/meals";
@@ -25,4 +24,4 @@ const MealDetail = () => {
   );
 };
 
-export default MealDetail
+export default MealDetail;

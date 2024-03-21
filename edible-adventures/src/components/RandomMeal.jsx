@@ -4,12 +4,19 @@ import { fetchRandomMeal } from "../api/meals";
 const RandomMeal = () => {
   const [meal, setMeal] = useState(null);
 
+  const getRandomMeal = async () => {
+    const randomMeal = await fetchRandomMeal();
+    setMeal(randomMeal);
+  };
+
   useEffect(() => {
-    fetchRandomMeal();
+    getRandomMeal();
   }, []);
+
   return (
     <div>
       <h2>Random Meal</h2>
+      <button onClick={getRandomMeal}>Get Random Meal</button>
       {meal && (
         <div>
           <h3>{meal.strMeal}</h3>
@@ -21,4 +28,4 @@ const RandomMeal = () => {
   );
 };
 
-export default RandomMeal
+export default RandomMeal;
