@@ -72,7 +72,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { fetchMealByName } from "../api/meals";
-import Modal from "react-modal";
+import Modal from "react-modal"; //use modal within my project
 
 const SearchByName = () => {
   const [query, setQuery] = useState("");
@@ -84,12 +84,12 @@ const SearchByName = () => {
 
   const openModal = (meal) => {
     setSelectedMeal(meal);
-    setModalIsOpen(true);
+    setModalIsOpen(true); //view details
   };
 
   const closeModal = () => {
     setSelectedMeal(null);
-    setModalIsOpen(false);
+    setModalIsOpen(false); // close modal
   };
 
   const handleSubmit = async (e) => {
@@ -145,7 +145,7 @@ const SearchByName = () => {
               {meal.strMeal}
               <img src={meal.strMealThumb} alt={meal.strMeal} />
               <button onClick={() => openModal(meal)}>View Details</button>
-            </li>
+            </li> // modal will work here
           ))}
         </ul>
       )}
@@ -153,13 +153,13 @@ const SearchByName = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        ariaHideApp={false}
+        ariaHideApp={false} // base
       >
         {selectedMeal && (
           <div>
             <h2>{selectedMeal.strMeal}</h2>
             <img src={selectedMeal.strMealThumb} alt={selectedMeal.strMeal} />
-            <ul>{getIngredientsList(selectedMeal)}</ul>
+            <p>{getIngredientsList(selectedMeal)}</p>
             <p>{selectedMeal.strInstructions}</p>
             <button onClick={closeModal}>Close</button>
           </div>
