@@ -26,6 +26,17 @@ const SearchByName = () => {
       setMeals([]);
     }
   }; // submit handler function in which i take the meals
+  const getIngredientsList = (meal) => {
+    let ingredientsList = "";
+    for (let i = 1; i <= 20; i++) {
+      if (meal[`strIngredient${i}`]) {
+        ingredientsList += `<li>${meal[`strIngredient${i}`]} - ${
+          meal[`strMeasure${i}`]
+        }</li>`;
+      }
+    }
+    return ingredientsList;
+  };
   return (
     <div>
       <h2>Search by Name</h2>
@@ -46,6 +57,9 @@ const SearchByName = () => {
             <li key={meal.idMeal}>
               {meal.strMeal}
               <img src={meal.strMealThumb} alt={meal.strMeal} />
+              <ul
+                dangerouslySetInnerHTML={{ __html: getIngredientsList(meal) }}
+              ></ul>
               {meal.strInstructions}
             </li>
           ))}
