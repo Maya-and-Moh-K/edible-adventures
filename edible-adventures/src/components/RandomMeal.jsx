@@ -16,7 +16,7 @@ const RandomMeal = () => {
   return (
     <div>
       <h2>Random Meal</h2>
-      <button onClick={getRandomMeal}>Get Random Meal</button>
+      <button onClick={fetchRandomMeal}>Get Random Meal</button>
       {meal && (
         <div>
           <h3>{meal.strMeal}</h3>
