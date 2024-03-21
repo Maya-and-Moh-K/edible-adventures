@@ -11,6 +11,7 @@ export const fetchMealByName = async (name) => {
   const response = await fetch(`${BASE_URL}/search.php?s=${name}`);
   const data = await response.json();
   console.log(data.meals || []);
+
   return data.meals || [];
 };
 
