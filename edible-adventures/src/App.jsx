@@ -1,12 +1,12 @@
-import "./App.css";
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import SearchByName from "./components/SearchByName";
-import SearchByCategory from "./components/SearchByCategory";
-import RandomMeal from "./components/RandomMeal";
-import MealList from "./components/MealList";
-import MealDetail from "./components/MealDetail";
+import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import SearchByName from './components/SearchByName';
+import SearchByCategory from './components/SearchByCategory';
+import RandomMeal from './components/RandomMeal';
+import MealList from './components/MealList';
+import MealDetail from './components/MealDetail';
 
 function App() {
   return (
