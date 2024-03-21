@@ -17,6 +17,7 @@ const RandomMeal = () => {
         <div>
           <h3>{meal.strMeal}</h3>
           <img src={meal.strMealThumb} alt={meal.strMeal} />
+          {/* <ul>{getIngredientsList(meal)}</ul> */}
           <p>{meal.strInstructions}</p>
         </div>
       )}

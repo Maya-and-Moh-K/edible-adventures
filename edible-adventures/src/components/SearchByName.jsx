@@ -83,10 +83,9 @@ const SearchByName = () => {
       setMeals([]);
     }
   };
-
   const getIngredientsList = (meal) => {
     let ingredientsList = [];
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 30; i++) {
       if (meal[`strIngredient${i}`]) {
         ingredientsList.push(
           <li key={`ingredient-${i}`}>
