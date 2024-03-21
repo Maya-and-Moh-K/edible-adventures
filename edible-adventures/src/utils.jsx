@@ -12,4 +12,4 @@ const handleFetch = async (url, options) => {
   }
 };
 
-export default handleFetch
+export default handleFetch;

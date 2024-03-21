@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { fetchRandomMeal } from "../api/meals";
 
 const RandomMeal = () => {
@@ -9,14 +9,10 @@ const RandomMeal = () => {
     setMeal(randomMeal);
   };
 
-  useEffect(() => {
-    getRandomMeal();
-  }, []);
-
   return (
     <div>
       <h2>Random Meal</h2>
-      <button onClick={fetchRandomMeal}>Get Random Meal</button>
+      <button onClick={getRandomMeal}>Get Random Meal</button>
       {meal && (
         <div>
           <h3>{meal.strMeal}</h3>
