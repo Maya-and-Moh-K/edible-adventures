@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { fetchMealsByCategory } from '../api/meals';
-import { fetchMealById } from '../api/meals';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { fetchMealsByCategory } from "../api/meals";
+import { fetchMealById } from "../api/meals";
 // import CategorySelector from "./CategorySelector";
 
 const SearchByCategory = () => {
-  const [category, setCategory] = useState('Beef');
+  const [category, setCategory] = useState("Beef");
   const [meals, setMeals] = useState([]);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [ids, setIds] = useState([]);
   const [idMeals, setIdMeals] = useState([]);
   const history = useNavigate();
@@ -19,7 +19,7 @@ const SearchByCategory = () => {
     setIds([]);
     const arr = [];
     for (let meal of meals) {
-      arr.push(meal['idMeal']);
+      arr.push(meal["idMeal"]);
     }
     setIds(arr);
   }, [meals]);
@@ -37,7 +37,7 @@ const SearchByCategory = () => {
         }
         setIdMeals(idMealArr);
       } catch (error) {
-        setError('No results found');
+        setError("No results found");
       }
     };
     settingIdMeals();
@@ -55,7 +55,7 @@ const SearchByCategory = () => {
       // console.log(fetchedMeals);
       history.push(`/meals?category=${category}`);
     } catch (error) {
-      setError('No results found');
+      setError("No results found");
     }
   };
 
@@ -109,8 +109,6 @@ const SearchByCategory = () => {
           ))}
         </ul>
       )}
-      
-
     </div>
   );
 };
