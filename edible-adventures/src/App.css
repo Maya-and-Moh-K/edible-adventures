@@ -6,12 +6,11 @@
 }
 
 body {
-  background-color: sandybrown;
+  background-color: #F0B880;
 }
 
 header {
-  background-color: lightcoral;
-  color: white;
+  background-color: #f08080;
   text-align: center;
   padding: 10px 0;
 }
@@ -76,6 +75,7 @@ img {
 h2 {
   text-align: center;
 }
+
 #filler {
   background-color: antiquewhite;
 }

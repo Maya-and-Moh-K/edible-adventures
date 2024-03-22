@@ -25,6 +25,6 @@ export const fetchRandomMeal = async () => {
 export const fetchMealById = async (id) => {
   const response = await fetch(`${BASE_URL}/lookup.php?i=${id}`);
   const data = await response.json();
-  console.log(data.meals || null);
+  // console.log(data.meals || null);
   return data.meals || [];
 };
