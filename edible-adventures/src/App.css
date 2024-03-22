@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #F0B880;
+  background-color: #f0b880;
 }
 
 header {
@@ -138,4 +138,27 @@ h2 {
 .modal p {
   font-size: 16px;
   line-height: 1.5;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.result {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 300px; /* Height of each row */
+  display: flex;
+  flex-direction: column;
+}
+
+.result h3,
+.result img {
+  margin: 0;
+}
+
+.result button {
+  margin-top: auto; /* Push button to the bottom of the container */
 }

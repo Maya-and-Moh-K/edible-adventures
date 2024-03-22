@@ -139,15 +139,15 @@ const SearchByName = () => {
       {error && <p>{error}</p>}
 
       {meals.length > 0 && (
-        <ul>
+        <div className="results">
           {meals.map((meal) => (
-            <li key={meal.idMeal}>
-              {meal.strMeal}
+            <div key={meal.idMeal} className="result">
+              <h3>{meal.strMeal}</h3>
               <img src={meal.strMealThumb} alt={meal.strMeal} />
               <button onClick={() => openModal(meal)}>View Details</button>
-            </li> // modal will work here
+            </div>
           ))}
-        </ul>
+        </div>
       )}
 
       <Modal
