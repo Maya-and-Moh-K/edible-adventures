@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #F0B880;
+  background-color: #f0b880;
 }
 
 header {
@@ -79,31 +79,28 @@ h2 {
 #filler {
   background-color: antiquewhite;
 }
-/*modal overlay */
 .ReactModal__Overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/*modal content*/
 .ReactModal__Content {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* shadow effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   max-width: 80%;
   max-height: 80%;
   overflow: auto;
 }
 
-/*close button*/
 .modal-close {
   position: absolute;
   top: 10px;
@@ -115,26 +112,22 @@ h2 {
   color: #333;
 }
 
-/* Style for the meal name in the modal */
 .modal h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/*meal img style */
 .modal img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
-/*ingredients style */
 .modal ul {
   margin-bottom: 10px;
   padding-left: 20px;
 }
 
-/* modal instructions */
 .modal p {
   font-size: 16px;
   line-height: 1.5;
