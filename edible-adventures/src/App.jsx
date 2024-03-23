@@ -11,6 +11,7 @@ import MealDetail from './components/MealDetail';
 function App() {
   return (
     <div className="App">
+      <h1>Edible Adventures!</h1>
       <Header />
       <Routes>
         <Route path="/" element={<RandomMeal />}></Route>

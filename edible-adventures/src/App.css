@@ -2,7 +2,7 @@
   font-family: Arial, sans-serif;
   margin: 0 auto;
   max-width: 800px;
-  padding: 20px;
+  padding: 10px;
 }
 
 body {
@@ -13,6 +13,8 @@ header {
   background-color: #f08080;
   text-align: center;
   padding: 10px 0;
+  /* Doesn't Work */
+  border: 10px, solid, #000000;
 }
 
 nav ul {
@@ -44,6 +46,8 @@ button {
   color: white;
   cursor: pointer;
   padding: 5px 10px;
+  display: flex;
+  justify-content: center;
 }
 
 button:disabled {
@@ -70,6 +74,10 @@ img {
   display: block;
   margin-bottom: 10px;
   max-width: 100%;
+}
+
+h1 {
+  text-align: center;
 }
 
 h2 {
