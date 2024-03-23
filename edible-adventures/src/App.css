@@ -155,4 +155,18 @@ h2 {
 
 .result button {
   margin-top: auto;
+  padding: 10px;
+}
+
+#category{
+  justify-content: center;
+}
+
+/* Not Working */
+#categoryButton {
+  padding: 10px;
+}
+
+label {
+  padding: 10px;
 }

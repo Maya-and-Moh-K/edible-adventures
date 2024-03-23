@@ -76,10 +76,9 @@ const SearchByCategory = () => {
   return (
     <div>
       <h2>Search by Category</h2>
-      <form onSubmit={handleSubmit} onChange={handleChange}>
-        {/* {CategorySelector()} */}
+      <form onSubmit={handleSubmit} onChange={handleChange} id="category">
         <label for="category">Select a Category:</label>
-        <select name="category" id="category">
+        <select name="category">
           <option value="Beef">Beef</option>
           <option value="Chicken">Chicken</option>
           <option value="Dessert">Dessert</option>
@@ -94,8 +93,7 @@ const SearchByCategory = () => {
           <option value="Breakfast">Breakfast</option>
           <option value="Goat">Goat</option>
         </select>
-        <button type="submit">Search</button>
-        {error && <p>{error}</p>}
+        <button type="submit" id="categoryButton">Search</button>
       </form>
       {idMeals.length > 0 && (
         <ul>
